@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>遵义市特殊教育资源中心共公共服务平台后台</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/common-theme02.css">
+</head>
+<body>
+    <!-- 侧边栏 -->
+    <div class="sidebar-wrap">
+        <div class="sidebar-box">
+            <!-- 登录头像 -->
+            <div class="head-portrait">
+                <div class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object img-circle" src="../images/img-protraint01.jpg" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <p class="media-heading">admin</p>
+                    <a href="../personCenter/person-center.html" class="btn btn-danger btn-xs" target="main_frame" id="personCenter"><i class="icon-user"></i> 个人中心</a>
+                  </div>
+                </div>
+            </div>
+            <!-- 侧边栏 -->
+            <div class="panel-group" id="accordion" role="tablist">
+                <!-- 侧边栏01：中心概况 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="sidebar01">
+                      <h4 class="panel-title on">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            <i class="icon-globe"></i> 中心概况
+                            <i class="icon-angle-down icon-levelone"></i>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" data-index="1">
+                      <div class="panel-body">
+                        <ul class="sidebar-list">
+                            <li data-index="1-1"><a href="../centerProfile/special-education.html" class="list-item-levelone active-first" target="main_frame">特教理念</a></li>
+                            <li data-index="1-2"><a href="../centerProfile/center-responsible.html" class="list-item-levelone" target='main_frame'>中心责任</a></li>
+                            <li data-index="1-3"><a href="../centerProfile/municipal.html" class="list-item-levelone" target='main_frame'>市级机构</a></li>
+                            <li data-index="1-4"><a href="../centerProfile/county.html" class="list-item-levelone" target='main_frame'>县级机构</a></li>
+                            <li data-index="1-5"><a href="../centerProfile/expert-team.html" class="list-item-levelone" target='main_frame'>专家队伍</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <!-- 侧边栏02：医教结合 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="sidebar02">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                            <i class="icon-medkit"></i> 医教结合 
+                            <i class="icon-angle-right icon-levelone"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" data-index="2">
+                      <div class="panel-body">
+                        <ul class="sidebar-list">
+                            <li data-index="2-1"><a href="../medEduCombination/responsible.html" class="list-item-levelone" target="main_frame">部门职责</a></li>
+                            <li data-index="2-2">
+                                <a href="#" class="list-item-levelone menu-leveltwo">
+                                    <i class="icon-angle-right icon-leveltwo"></i> 康复训练 
+                                </a>
+                                <ul class="menu-leveltwo-list">
+                                    <li data-index="2-2-1">
+                                        <a href="../medEduCombination/recovery-type.html" class="list-item-leveltwo" target="main_frame">
+                                            <i class="icon-double-angle-right"></i> 康复类型
+                                        </a>
+                                    </li>
+                                    <li data-index="2-2-2">
+                                        <a href="../medEduCombination/recovery-con.html" class="list-item-leveltwo" target="main_frame">
+                                            <i class="icon-double-angle-right"></i> 康复内容
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li data-index="2-3"><a href="../medEduCombination/physican-list.html" class="list-item-levelone" target="main_frame" target="main_frame">医生团队</a></li>
+                            <li data-index="2-4"><a href="../medEduCombination/diaReport-list.html" class="list-item-levelone" target="main_frame" target="main_frame">诊断报告定点医疗机构</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <!-- 侧边栏03：随班就读 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="sidebar03">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                            <i class="icon-group"></i> 随班就读 
+                            <i class="icon-angle-right icon-levelone"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" data-index="3">
+                      <div class="panel-body">
+                        <ul class="sidebar-list">
+                            <li data-index="3-1">
+                                <a href="../regularClass/schools.html" class="list-item-levelone" target="main_frame">随班就读学校</a>
+                            </li>
+                            <li data-index="3-2"><a href="../regularClass/teams.html" class="list-item-levelone" target="main_frame">教师团队</a></li>
+                            <li data-index="3-3"><a href="../regularClass/resourceRooms.html" class="list-item-levelone" target="main_frame">资源教室</a></li>
+                            <li data-index="3-4"><a href="../regularClass/activities.html" class="list-item-levelone" target="main_frame">教育教学活动</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <!-- 侧边栏04：送教上门 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="sidebar04">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                            <i class="icon-truck"></i> 送教上门 
+                            <i class="icon-angle-right icon-levelone"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" data-index="4">
+                      <div class="panel-body">
+                        <ul class="sidebar-list">
+                            <li data-index="4-1">
+                                <a href="../homeTeaching/ht-system.html" class="list-item-levelone" target="main_frame">送教制度</a>
+                            </li>
+                            <li data-index="4-2">
+                                <a href="../homeTeaching/distance.html" class="list-item-levelone" target="main_frame">远程送教</a>
+                            </li>
+                            <li>
+                                <a href="#" class="list-item-levelone menu-leveltwo">
+                                    <i class="icon-angle-right icon-leveltwo"></i> 送教内容 
+                                </a>
+                                <ul class="menu-leveltwo-list">
+                                    <li data-index="4-3-1">
+                                        <a href="../homeTeaching/con-type.html" class="list-item-leveltwo" target="main_frame"><i class="icon-double-angle-right"></i> 内容分类</a>
+                                    </li>
+                                    <li data-index="4-3-2">
+                                        <a href="../homeTeaching/con-detail.html" class="list-item-leveltwo" target="main_frame"><i class="icon-double-angle-right"></i> 具体内容</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <!-- 侧边栏05：在线课程 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="sidebar05">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                            <i class="icon-globe"></i> 在线课程 
+                            <i class="icon-angle-right icon-levelone"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" data-index="5">
+                      <div class="panel-body">
+                        <ul class="sidebar-list">
+                            <li data-index="5-1"><a href="../courseOnline/course-type.html" class="list-item-levelone" target="main_frame">课程类型</a></li>
+                            <li data-index="5-2"><a href="../courseOnline/course-con.html" class="list-item-levelone" target="main_frame">课程内容</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <!-- 侧边栏06：信息资讯 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="sidebar06">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                            <i class=" icon-rss"></i> 信息资讯 
+                            <i class="icon-angle-right icon-levelone"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" data-index="6">
+                      <div class="panel-body">
+                        <ul class="sidebar-list">
+                            <li data-index="6-1"><a href="../news/news-type.html" class="list-item-levelone" target="main_frame">资讯分类</a></li>
+                            <li data-index="6-2"><a href="../news/news-con.html" class="list-item-levelone" target="main_frame">资讯内容</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <!-- 侧边栏07：教学资源 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="sidebar07">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                            <i class=" icon-tasks"></i> 教学资源 
+                            <i class="icon-angle-right icon-levelone"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" data-index="7">
+                      <div class="panel-body">
+                        <ul class="sidebar-list">
+                            <li data-index="7-1"><a href="../teachingResource/resouce-type.html" class="list-item-levelone" target="main_frame">资源分类</a></li>
+                            <li data-index="7-2"><a href="../teachingResource/resouce-con.html" class="list-item-levelone" target="main_frame">资源内容</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <!-- 侧边栏08：信息管理 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="sidebar08">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+                            <i class="icon-comments"></i> 信息管理 
+                            <i class="icon-angle-right icon-levelone"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" data-index="8">
+                      <div class="panel-body">
+                        <ul class="sidebar-list">
+                            <li data-index="8-1">
+                                <a href="../infoManage/org-manage.html" class="list-item-levelone" target="main_frame">机构管理 
+                                </a>
+                            </li>
+                            <li data-index="8-2">
+                                <a href="../infoManage/stuInfo-import.html" class="list-item-levelone" target="main_frame">学生信息导入</a>
+                            </li>
+                            <li data-index="8-3">
+                                <a href="../infoManage/stuInfo-query.html" class="list-item-levelone" target="main_frame">学生信息查询</a>
+                            </li>
+                            <li data-index="8-4">
+                                <a href="../infoManage/teacherInfo-import.html" class="list-item-levelone" target="main_frame">教师信息导入</a>
+                            </li>
+                            <li data-index="8-5">
+                                <a href="../infoManage/teacherInfo-query.html" class="list-item-levelone" target="main_frame">教师信息查询</a>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <!-- 侧边栏09：关键词管理 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="sidebar09">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
+                            <i class="icon-key"></i> 关键词管理 
+                            <i class="icon-angle-right icon-levelone"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" data-index="9">
+                      <div class="panel-body">
+                        <ul class="sidebar-list">
+                            <li data-index="9-1"><a href="../keywordMange/keywords.html" class="list-item-levelone" target="main_frame">关键词管理</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <!-- 侧边栏10：系统管理 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="sidebar10">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTenth">
+                            <i class="icon-cog"></i> 系统管理 
+                            <i class="icon-angle-right icon-levelone"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseTenth" class="panel-collapse collapse" role="tabpanel" data-index="10">
+                      <div class="panel-body">
+                        <ul class="sidebar-list">
+                            <li data-index="10-1"><a href="../systemManage/users.html" class="list-item-levelone" target="main_frame">用户管理</a></li>
+                            <li data-index="10-2"><a href="../systemManage/roles.html" class="list-item-levelone" target="main_frame">角色管理</a></li>
+                            <li data-index="10-3"><a href="../systemManage/system-log.html" class="list-item-levelone" target="main_frame">系统日志</a></li>
+                            <li data-index="10-4"><a href="../systemManage/module-name.html" class="list-item-levelone" target="main_frame">模块名称</a></li>
+                            <li data-index="10-5"><a href="../systemManage/index-focusMap.html" class="list-item-levelone" target="main_frame">首页焦点图管理</a></li>
+                            <li data-index="10-6"><a href="../systemManage/index-link.html" class="list-item-levelone" target="main_frame">首页链接管理</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>                        
+        </div>
+    </div>
+    <!-- 脚本 -->
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/sidebar.js"></script>
+</body>
+</html>

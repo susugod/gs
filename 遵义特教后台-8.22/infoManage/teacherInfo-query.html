@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>遵义市特殊教育资源中心共公共服务平台后台</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="mainBox">
+        <!-- 路径导航 + 搜索框 -->
+        <div class="breadBox">
+            <!-- 路径导航 -->
+            <ol class="breadcrumb">
+              <li><i class="icon-home"></i> 信息管理</li>
+              <li class="active">教师信息查询</li>
+            </ol>         
+        </div>
+      <!-- 内容区域 -->
+        <div class="main">
+            <div class="container-fliud">
+                <div class="row">
+                    <!-- 条件选择 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <i class="icon-tags"></i> 条件选择
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-inline">
+                                <div class="form-group">
+                                    <label>区域：</label>
+                                    <select class="form-control select-sty">
+                                        <option value="1">汇川区</option>
+                                        <option value="1">红花岗区</option>
+                                    </select>                                
+                                </div>
+                                <div class="form-group">
+                                    <label>学校：</label>
+                                    <select class="form-control select-sty">
+                                        <option value="1">遵义一小</option>
+                                        <option value="1">遵义二小</option>
+                                    </select>                                
+                                </div>
+                                <div class="form-group">
+                                    <label>负责年级：</label>
+                                    <select class="form-control select-sty">
+                                        <option value="1">1年级</option>
+                                        <option value="1">2年级</option>
+                                        <option value="1">3年级</option>
+                                    </select>                                
+                                </div>
+                                <div class="form-group">
+                                    <label>负责班级：</label>
+                                    <select class="form-control select-sty">
+                                        <option value="1">一班</option>
+                                        <option value="1">二班</option>
+                                    </select>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 按用户名/姓名查询 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <i class="icon-search"></i> 按用户名/姓名查询
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-inline">
+                                <div class="form-group mr-10">
+                                    <label>用户名：</label>
+                                    <input type="text" class="form-control">
+                                </div>  
+                                <div class="form-group">
+                                    <label>姓名：</label>
+                                    <input type="text" class="form-control">
+                                    <button class="btn btn-primary"><i class="icon-search"></i> 查询</button>
+                                </div>                              
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 查询结果 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <i class="icon-th-large"></i> 查询结果
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-striped table-bordered table-hover">
+                                <tr>
+                                    <th><input type="checkbox"></th>
+                                    <th>序号</th>
+                                    <th>教师编号</th>
+                                    <th>姓名</th>
+                                    <th>性别</th>
+                                    <th>授权清单</th>
+                                    <th>职务</th>
+                                    <th>密码复原</th>
+                                    <th>操作</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>01</td>
+                                    <td>090807000</td>
+                                    <td>张红</td>
+                                    <td>女</td>
+                                    <td>汇川区/遵义一小/2016级</td>
+                                    <td>特教教师</td>
+                                    <td>
+                                        <button class="btn btn-success btn-xs"><i class="icon-undo"></i> 密码复原</button>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-primary btn-xs"><i class="icon-pencil"></i> 编辑</button>
+                                        <button class="btn btn-danger btn-xs"><i class="icon-trash"></i> 删除</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>02</td>
+                                    <td>090807000</td>
+                                    <td>李阳</td>
+                                    <td>男</td>
+                                    <td>汇川区/遵义一小/2016级/一班</td>
+                                    <td>特教教师</td>
+                                    <td>
+                                        <button class="btn btn-success btn-xs"><i class="icon-undo"></i> 密码复原</button>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-primary btn-xs"><i class="icon-pencil"></i> 编辑</button>
+                                        <button class="btn btn-danger btn-xs"><i class="icon-trash"></i> 删除</button>
+                                    </td>
+                                </tr>
+                            </table>
+                            <p>查询结果：60人</p>
+                            <!-- 分页 -->
+                            <nav>
+                              <ul class="pagination">
+                                <li class="disabled">
+                                  <a href="#"><span aria-hidden="true">«</span></a>
+                                </li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li>
+                                  <a href="#"><span>»</span></a>
+                                </li>
+                              </ul>
+                            </nav>     
+                        </div>
+                        <div class="panel-footer text-right">
+                            <button class="btn btn-danger"><i class="icon-trash"></i> 全部删除</button>
+                            <button class="btn btn-primary" id="power-add"><i class="icon-plus"></i> 添加授权</button>
+                        </div>
+                    </div>
+
+                    <!-- 信息授权 -->
+                    <div class="power-list-box" style="display: none">
+                        <h4>开始授权：</h4>
+                        <!-- 标签页：信息批量授权、信息个别授权 -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#info-school" role="tab" data-toggle="tab">信息批量授权</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#info-grade" role="tab" data-toggle="tab">信息个别授权</a>
+                            </li>
+                        </ul>
+                        <!-- 标签页对应内容 -->
+                        <div class="tab-content">
+
+                            <!-- 信息批量授权：内容 -->
+                            <div role="tabpanel" class="tab-pane active" id="info-school">
+                                <!-- 区域选择 -->
+                                <div class="row">
+                                    <div class="form-group col-md-3">
+                                        <label>区域</label>
+                                        <select class="form-control">
+                                            <option value="1">汇川区</option>
+                                            <option value="2">红花岗区</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label>学校类型</label>
+                                        <select class="form-control">
+                                            <option value="1">随班就读学校</option>
+                                            <option value="2">特教学校</option>
+                                            <option value="3" selected="">普通学校</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                          <label>学校名称</label>
+                                          <select class="form-control">
+                                            <option value="1" selected="">遵义市第一中学</option>
+                                            <option value="2">遵义市第二中学</option>
+                                            <option value="3">遵义市第三中学</option>
+                                          </select>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label>年级名称</label>
+                                        <select class="form-control">
+                                            <option value="1">一年级</option>
+                                            <option value="2" selected="">二年级</option>
+                                            <option value="3">三年级</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- 添加按钮 -->
+                                <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <button class="btn btn-primary"><i class=" icon-plus-sign"></i> 添加至授权清单</button>
+                                    </div>
+                                </div>
+                                <!-- 授权清单 -->
+                                <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <label>授权清单：</label>
+                                        <select class="form-control" multiple>
+                                            <option value="1">遵义一小2016级</option>
+                                            <option value="1">遵义一小2015级</option>
+                                        </select>
+                                    </div>                  
+                                </div>
+                                <!-- 确认、清空按钮 -->
+                                <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <button class="btn btn-success"><i class="icon-ok"></i> 确认授权</button>
+                                        <button class="btn btn-danger"><i class="icon-trash"></i> 清空</button>
+                                    </div>
+                                </div>                           
+                            </div>
+
+                            <!-- 信息个别授权对应内容 -->
+                            <div role="tabpanel" class="tab-pane" id="info-grade">
+                                <!-- 查询 -->
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <label>学号：</label>
+                                        <input type="text" class="form-control">                               
+                                    </div>   
+                                    <div class="form-group">
+                                        <label>姓名：</label>
+                                        <input type="text" class="form-control">     
+                                        <button class="btn btn-primary"><i class="icon-search"></i> 查询</button>                         
+                                    </div>                                
+                                </div>
+                                <!-- 查询结果 -->
+                                <h5><i class="icon-th-large"></i> 查询结果：</h5>                                
+                                <table class="table table-striped table-bordered table-hover">
+                                    <tr>
+                                        <th><input type="checkbox"></th>
+                                        <th>序号</th>
+                                        <th>学号</th>
+                                        <th>姓名</th>
+                                        <th>性别</th>
+                                        <th>班级</th>
+                                        <th>年级</th>
+                                        <th>学校</th>
+                                        <th>区域</th>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>01</td>
+                                        <td>2015236585</td>
+                                        <td>张三</td>
+                                        <td>男</td>
+                                        <td>1班</td>
+                                        <td>二年级</td>
+                                        <td>遵义一小</td>
+                                        <td>汇川区</td>
+                                    </tr>
+                                </table>   
+                                <!-- 添加按钮 -->
+                                <div class="row">
+                                    <div class="form-group col-md-12">
+                                        <button class="btn btn-primary"><i class=" icon-plus-sign"></i> 添加至授权清单</button>
+                                    </div>
+                                </div>
+                                <!-- 授权清单 -->
+                                <div class="form-group">
+                                    <label>授权清单：</label>
+                                    <select class="form-control" multiple>
+                                        <option value="1">张三</option>
+                                        <option value="1">李红</option>
+                                    </select>
+                                </div>   
+                                <!-- 确认、清空按钮 -->
+                                <div class="form-group">
+                                    <button class="btn btn-success"><i class="icon-ok"></i> 确认授权</button>
+                                    <button class="btn btn-danger"><i class="icon-trash"></i> 清空</button>
+                                </div>                           
+                            </div>  
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 脚本 -->
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $('#power-add').on('click',function(){
+                $('.power-list-box').show();
+                $(document).scrollTop(400);
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>遵义市特殊教育资源中心共公共服务平台后台</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="mainBox">
+        <!-- 路径导航 + 搜索框 -->
+        <div class="breadBox">
+            <!-- 路径导航 -->
+            <ol class="breadcrumb">
+              <li><i class="icon-home"></i> 信息管理</li>
+              <li>教师信息导入</li>
+            </ol>         
+        </div>
+      <!-- 内容区域 -->
+        <div class="main">
+            <div class="container-fliud">
+                <div class="row">
+                    <!-- 导入类型选择 -->
+                    <div class="import-type">
+                        <div class="btn-group">
+                            <button class="btn btn-danger import-type-btn" id="import-group">
+                                <i class="icon-group"></i> 群体导入
+                            </button>
+                            <button class="btn btn-default import-type-btn" id="import-indival">
+                                <i class="icon-user"></i> 个体导入
+                            </button>
+                        </div>
+                    </div>
+                    <!-- 群体导入对应内容 -->
+                    <div class="content-show">
+                        <!-- 学校选择 -->
+                        <div class="panel panel-default mt-20">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <i class="icon-th-large"></i> 学校选择
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <label>区域：</label>
+                                        <select class="form-control select-sty">
+                                            <option value="1">汇川区</option>
+                                            <option value="1">红花岗区</option>
+                                        </select>                                
+                                    </div>
+                                    <div class="form-group">
+                                        <label>学校：</label>
+                                        <select class="form-control select-sty">
+                                            <option value="1">遵义一小</option>
+                                            <option value="1">遵义二小</option>
+                                        </select>                                
+                                    </div>                          
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 导入 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <i class="icon-file-alt"></i> 根据execle格式导入
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <label>选择文件：</label>
+                                        <input type="file" class="form-control">
+                                        <button class="btn btn-success"><i class="icon-eye-open"></i> 导入预览</button>
+                                        <button class="btn btn-danger"><i class="icon-lightbulb"></i> 导入说明</button>
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 密码设置 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <i class="icon-lock"></i> 密码设置
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="radio-group">
+                                    <label>                                    
+                                        <input type="radio" name="password-group" checked=""> 密码与用户名相同
+                                    </label><br/>
+                                    <label>                                    
+                                        <input type="radio" name="password-group"> 设置统一的密码
+                                        <input type="text" class="form-control input-password">
+                                    </label>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="funBox text-right">
+                            <button class="btn btn-success"><i class="icon-ok"></i> 确定导入</button>
+                        </div>                        
+                    </div>
+                    <!-- 个体导入对应内容 -->
+                    <div class="content-show" style="display: none">
+                        <!-- 条件选择 -->
+                        <div class="panel panel-default mt-20">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <i class="icon-th-large"></i> 条件选择
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <label>区域：</label>
+                                        <select class="form-control select-sty">
+                                            <option value="1">汇川区</option>
+                                            <option value="1">红花岗区</option>
+                                        </select>                                
+                                    </div>
+                                    <div class="form-group">
+                                        <label>学校：</label>
+                                        <select class="form-control select-sty">
+                                            <option value="1">遵义一小</option>
+                                            <option value="1">遵义二小</option>
+                                        </select>                                
+                                    </div>  
+                                    <div class="form-group">
+                                        <label>负责年级：</label>
+                                        <select class="form-control select-sty">
+                                            <option value="1">1年级</option>
+                                            <option value="1">2年级</option>
+                                            <option value="1">3年级</option>
+                                            <option value="1">4年级</option>
+                                        </select>                                
+                                    </div>  
+                                    <div class="form-group">
+                                        <label>负责班级：</label>
+                                        <select class="form-control select-sty">
+                                            <option value="1">一班</option>
+                                            <option value="1">二班</option>
+                                        </select>                                
+                                    </div>                          
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 基本信息 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <i class="icon-th-large"></i> 基本信息
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                              <div class="row">                    
+                                <div class="form-group col-md-3">
+                                  <label>用户名</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label>姓名</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label>出生日期</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label>性别</label><br/>
+                                  <label class="radio-inline">
+                                    <input type="radio" name="sexgroup" checked="">男 
+                                  </label>
+                                  <label class="radio-inline">
+                                    <input type="radio" name="sexgroup">女 
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="form-group col-md-3">
+                                  <label>密码</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label>确认密码</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label>职务</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label>学历</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="form-group col-md-3">
+                                  <label>民族</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label>籍贯</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label>E-mail</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label>联系电话</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="form-group col-md-12">
+                                  <label>授权清单</label>
+                                  <textarea class="form-control"></textarea>
+                                </div>                  
+                              </div>
+                            </div>
+                            <div class="panel-footer text-right">                              
+                              <button class="btn btn-success"><i class="icon-save"></i> 保存信息</button>
+                            </div>
+                        </div>
+                        <!-- 信息授权 -->
+                        <div class="panel panel-default">
+                          <!-- 头部 -->
+                          <div class="panel-heading">
+                            <div class="panel-title"><i class="icon-th-large"></i> 信息授权</div>
+                          </div>
+                          <!-- 信息授权 -->
+                          <div class="panel-body">
+                              <div class="row">
+                                <div class="form-group col-md-3">
+                                  <label>区域</label>
+                                  <select class="form-control">
+                                    <option value="1">汇川区</option>
+                                    <option value="2">红花岗区</option>
+                                  </select>
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label>学校类型</label>
+                                  <select class="form-control">
+                                    <option value="1">随班就读学校</option>
+                                    <option value="2">特教学校</option>
+                                    <option value="3" selected="">普通学校</option>
+                                  </select>
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label>学校名称</label>
+                                  <select class="form-control">
+                                    <option value="1" selected="">遵义市第一中学</option>
+                                    <option value="2">遵义市第二中学</option>
+                                    <option value="3">遵义市第三中学</option>
+                                  </select>
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label>年级名称</label>
+                                  <select class="form-control">
+                                    <option value="1">一年级</option>
+                                    <option value="2" selected="">二年级</option>
+                                    <option value="3">三年级</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="form-group col-md-12">
+                                  <button class="btn btn-primary"><i class=" icon-plus-sign"></i> 添加至授权清单</button>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="form-group col-md-12">
+                                  <label>授权清单</label>
+                                  <select class="form-control" multiple>
+                                    <option value="1">遵义一小2016级</option>
+                                    <option value="1">遵义一小2015级</option>
+                                  </select>
+                                </div>                  
+                              </div>
+                              <div class="row">
+                                <div class="form-group col-md-12">
+                                    <button class="btn btn-success"><i class="icon-ok"></i> 确认授权</button>
+                                    <button class="btn btn-danger"><i class="icon-trash"></i> 清空</button>
+                                </div>
+                              </div>
+                          </div>
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 脚本 -->
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        $('.import-type-btn').on('click',function(){
+            var curIndex = $(this).index();
+            if($(this).hasClass('btn-default')){
+                $(this).removeClass('btn-default').addClass('btn-danger');
+                $(this).siblings().removeClass('btn-danger').addClass('btn-default');
+            }
+            $('.content-show').eq(curIndex).slideDown().siblings('.content-show').slideUp();
+        })
+    </script>
+</body>
+</html>

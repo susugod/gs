@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>遵义市特殊教育资源中心共公共服务平台后台</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="mainBox">
+        <!-- 路径导航 + 搜索框 -->
+        <div class="breadBox">
+            <!-- 路径导航 -->
+            <ol class="breadcrumb">
+              <li><i class="icon-home"></i> 信息管理</li>
+              <li>机构管理</li>
+              <li>导入说明</li>
+            </ol>         
+        </div>
+      <!-- 内容区域 -->
+        <div class="main">
+            <div class="container-fliud">
+                <div class="row">
+                    <!-- 导入说明 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <i class="icon-tags"></i> 导入说明
+                            </div>
+                        </div>
+                        <div class="panel-body import-intro">
+                            <p>一、在“导入模板”中下载excel表格；</p>
+                            <p>二、在excel表格中添加学生基本信息，请参照以下格式进行整理学生信息：</p>
+                            <img src="../images/import-intro.png" alt="">
+                            <p class="import-warning">注意：</p>
+                            <p>1.添加的学号，不能重复；</p>
+                            <p>2.性别只能填写“男”或者“女”；</p>
+                            <p>3.出生日期必须是yyyy-mm-dd格式；</p>
+                            <p>4.“班级名称”、“年级名称”必须与“机构创建”中已建好的信息相吻合；</p>
+                            <p class="import-prompt">温馨提示：请严格按照数据导入格式要求整理数据，否则会造成导入失败。</p>
+                            <p>三、点击导入预览，认真核对预览中的数据与创建的excel表格中需导入的数据是否一致；核对预览中的年级、班级等信息是否在“机构创建”中已经创建完成。</p>
+                            <p>四、点击导入，显示“导入成功”；如若显示“导入失败”，请按照导入说明要求的数据整理格式核对所创建的excel表。</p>
+                        </div>
+                        <div class="panel-footer text-right">
+                            <a href="org-manage.html" class="btn btn-danger"><i class="icon-reply"></i> 返回</a>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 脚本 -->
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

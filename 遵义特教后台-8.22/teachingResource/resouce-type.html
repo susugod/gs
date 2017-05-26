@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>遵义市特殊教育资源中心共公共服务平台后台</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="mainBox">
+        <!-- 路径导航 + 搜索框 -->
+        <div class="breadBox">
+            <!-- 路径导航 -->
+            <ol class="breadcrumb">
+              <li><i class="icon-home"></i> 教学资源</li>
+              <li class="active">资源分类</li>
+            </ol>
+            <!-- 查询 -->
+            <div class="searchBox">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="请输入要查询的内容">
+                    <span class="input-group-btn">
+                        <button class="btn btn-danger"><i class="icon-search"></i></button>
+                    </span>
+                </div>
+            </div>            
+        </div>
+      <!-- 内容区域 -->
+        <div class="main">
+            <div class="container-fliud">
+                <div class="row">
+                    <!-- 内容分类 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <i class="icon-th-large"></i> 资源分类                         
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-striped table-bordered table-hover" id="table-list-01">
+                                <tr>
+                                    <th>标题</th>
+                                    <th>关键词级别数量</th>
+                                    <th>操作</th>
+                                </tr>
+                                <tr>
+                                    <td>教案资源</td>
+                                    <td>1</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-xs type-editor"><i class="icon-pencil"></i> 编辑</button>
+                                        <button class="btn btn-danger btn-xs con-remove"><i class="icon-trash"></i> 删除</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>课件资源</td>
+                                    <td>0</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-xs type-editor"><i class="icon-pencil"></i> 编辑</button>
+                                        <button class="btn btn-danger btn-xs con-remove"><i class="icon-trash"></i> 删除</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>辅导方案</td>
+                                    <td>3</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-xs type-editor"><i class="icon-pencil"></i> 编辑</button>
+                                        <button class="btn btn-danger btn-xs con-remove"><i class="icon-trash"></i> 删除</button>
+                                    </td>
+                                </tr>
+                            </table>                            
+                        </div>
+                        <div class="panel-footer text-right">
+                            <button class="btn btn-success add-type"><i class="icon-plus"></i> 添加类别</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 模态弹框：添加类别 -->
+    <div class="modal fade" id="myModal01" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <h4 class="modal-title">添加类别</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>标题：</label>
+                    <input type="text" class="form-control resouce-title">
+                </div>
+                <div class="form-group">
+                    <label>关键词级别：</label>
+                    <input type="text" class="form-control keyword-level">
+                </div>
+                <span class="text-danger error-message"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    <i class="icon-remove"></i> 取消
+                </button>
+                <button type="button" class="btn btn-success sure-add">
+                    <i class="icon-ok"></i> 确定
+                </button>
+            </div>
+        </div>
+      </div>
+    </div> 
+
+    <!-- 模态弹框：编辑类别 -->
+    <div class="modal fade" id="myModal02" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <h4 class="modal-title">编辑类别</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>标题：</label>
+                    <input type="text" class="form-control resouce-title">
+                </div>
+                <div class="form-group">
+                    <label>关键词级别：</label>
+                    <input type="text" class="form-control keyword-level">
+                </div>
+                <span class="text-danger error-message"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    <i class="icon-remove"></i> 取消
+                </button>
+                <button type="button" class="btn btn-success sure-add">
+                    <i class="icon-ok"></i> 确定
+                </button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 脚本 -->
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/addInfo.js"></script>
+    <script src="../js/editorInfoFn.js"></script>
+    <script>
+        addInfo( '.add-type', '#myModal01', '#table-list-01', '.resouce-title', '.keyword-level');
+        editorInfoFn('.type-editor','#myModal02','#table-list-01','.resouce-title','.keyword-level')
+    </script>
+</body>
+</html>

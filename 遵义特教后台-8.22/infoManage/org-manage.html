@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>遵义市特殊教育资源中心共公共服务平台后台</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="mainBox">
+        <!-- 路径导航 + 搜索框 -->
+        <div class="breadBox">
+            <!-- 路径导航 -->
+            <ol class="breadcrumb">
+              <li><i class="icon-home"></i> 信息管理</li>
+              <li>机构管理</li>
+            </ol>         
+        </div>
+      <!-- 内容区域 -->
+        <div class="main">
+            <div class="container-fliud">
+                <div class="row">
+                    <div>
+                        <!-- 标签页：学校信息、年级信息、班级信息 -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#info-area" role="tab" data-toggle="tab">区域信息</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#info-school" role="tab" data-toggle="tab">学校信息</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#info-grade" role="tab" data-toggle="tab">年级信息</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#info-class" role="tab" data-toggle="tab">班级信息</a>
+                            </li>
+                        </ul>
+                        <!-- 标签页对应内容 -->
+                        <div class="tab-content">
+
+                            <!-- 学校信息对应内容 -->
+                            <div role="tabpanel" class="tab-pane active" id="info-area">
+                                <!-- 区域列表 -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <i class="icon-th-large"></i> 区域列表
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <table class="table table-striped table-bordered table-hover" id="table-list-type01">
+                                            <tr>
+                                                <th>序号</th>
+                                                <th>名称</th>
+                                                <th>操作</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>汇川区</td>
+                                                <td>
+                                                    <button class="btn btn-primary btn-xs org-editor"><i class="icon-pencil"></i> 编辑</button>
+                                                    <button class="btn btn-danger btn-xs con-remove"><i class="icon-trash"></i> 删除</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>汇川区</td>
+                                                <td>
+                                                    <button class="btn btn-primary btn-xs org-editor"><i class="icon-pencil"></i> 编辑</button>
+                                                    <button class="btn btn-danger btn-xs con-remove"><i class="icon-trash"></i> 删除</button>
+                                                </td>
+                                            </tr>
+                                        </table>                            
+                                    </div>
+                                    <div class="panel-footer text-right">
+                                        <button class="btn btn-danger"><i class="icon-trash"></i> 删除选定项</button>
+                                        <button class="btn btn-success add-org"><i class="icon-plus"></i> 添加区域</button>
+                                    </div>
+                                </div>
+                                <!-- 导入 -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <i class="icon-file-alt"></i> 区域导入(execle格式)
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="form-inline">
+                                            <div class="form-group">
+                                                <label>选择文件：</label>
+                                                <input type="file" class="form-control">
+                                                <button class="btn btn-success"><i class="icon-eye-open"></i> 导入预览</button>
+                                                <a href="import-intro.html" class="btn btn-danger"><i class="icon-lightbulb"></i> 导入说明</a>
+                                            </div>                                
+                                        </div>
+                                    </div>
+                                </div>                                               
+                            </div>
+
+                            <!-- 学校信息对应内容 -->
+                            <div role="tabpanel" class="tab-pane" id="info-school">
+                                <!-- 条件选择 -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <i class="icon-tags"></i> 条件选择
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="form-inline">
+                                            <div class="form-group">
+                                                <label>区域：</label>
+                                                <select class="form-control select-sty">
+                                                    <option value="1">汇川区</option>
+                                                    <option value="1">红花岗区</option>
+                                                </select>                                
+                                            </div>                                
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 筛选结果 -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <i class="icon-th-large"></i> 筛选结果
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <table class="table table-striped table-bordered table-hover" id="table-list-type02">
+                                            <tr>
+                                                <th>序号</th>
+                                                <th>名称</th>
+                                                <th>操作</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>遵义一小</td>
+                                                <td>
+                                                    <button class="btn btn-primary btn-xs school-editor"><i class="icon-pencil"></i> 编辑</button>
+                                                    <button class="btn btn-danger btn-xs con-remove"><i class="icon-trash"></i> 删除</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>遵义二小</td>
+                                                <td>
+                                                    <button class="btn btn-primary btn-xs school-editor"><i class="icon-pencil"></i> 编辑</button>
+                                                    <button class="btn btn-danger btn-xs con-remove"><i class="icon-trash"></i> 删除</button>
+                                                </td>
+                                            </tr>
+                                        </table>                            
+                                    </div>
+                                    <div class="panel-footer text-right">
+                                        <button class="btn btn-success add-school"><i class="icon-plus"></i> 添加学校</button>
+                                    </div>
+                                </div>
+                                <!-- 导入 -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <i class="icon-file-alt"></i> 学校导入(execle格式)
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="form-inline">
+                                            <div class="form-group">
+                                                <label>选择文件：</label>
+                                                <input type="file" class="form-control">
+                                                <button class="btn btn-success"><i class="icon-eye-open"></i> 导入预览</button>
+                                                <a href="import-intro.html" class="btn btn-danger"><i class="icon-lightbulb"></i> 导入说明</a>
+                                            </div>                                
+                                        </div>
+                                    </div>
+                                </div>                                               
+                            </div>
+
+                            <!-- 年级信息对应内容 -->
+                            <div role="tabpanel" class="tab-pane" id="info-grade">
+                                <!-- 条件选择 -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <i class="icon-tags"></i> 条件选择
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="form-inline">
+                                            <div class="form-group">
+                                                <label>区域：</label>
+                                                <select class="form-control select-sty">
+                                                    <option value="1">汇川区</option>
+                                                    <option value="1">红花岗区</option>
+                                                </select>                                
+                                            </div>   
+                                            <div class="form-group">
+                                                <label>学校：</label>
+                                                <select class="form-control select-sty">
+                                                    <option value="1">遵义一小</option>
+                                                    <option value="1">遵义二小</option>
+                                                </select>                                
+                                            </div>                                
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 筛选结果 -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <i class="icon-th-large"></i> 筛选结果
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <table class="table table-striped table-bordered table-hover" id="table-list-type03">
+                                            <tr>
+                                                <th>序号</th>
+                                                <th>年级名称</th>
+                                                <th>操作</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>2013级</td>
+                                                <td>
+                                                    <button class="btn btn-primary btn-xs grade-editor"><i class="icon-pencil"></i> 编辑</button>
+                                                    <button class="btn btn-danger btn-xs con-remove"><i class="icon-trash"></i> 删除</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>2014级</td>
+                                                <td>
+                                                    <button class="btn btn-primary btn-xs grade-editor"><i class="icon-pencil"></i> 编辑</button>
+                                                    <button class="btn btn-danger btn-xs con-remove"><i class="icon-trash"></i> 删除</button>
+                                                </td>
+                                            </tr>
+                                        </table>                            
+                                    </div>
+                                    <div class="panel-footer text-right">
+                                        <button class="btn btn-danger"><i class="icon-trash"></i> 删除选定项</button>
+                                        <button class="btn btn-success add-grade"><i class="icon-plus"></i> 添加年级</button>
+                                    </div>
+                                </div>
+                                <!-- 导入 -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <i class="icon-file-alt"></i> 年级导入(execle格式)
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="form-inline">
+                                            <div class="form-group">
+                                                <label>选择文件：</label>
+                                                <input type="file" class="form-control">
+                                                <button class="btn btn-success"><i class="icon-eye-open"></i> 导入预览</button>
+                                                <a href="import-intro.html" class="btn btn-danger"><i class="icon-lightbulb"></i> 导入说明</a>
+                                            </div>                                
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>  
+                            
+                            <!-- 班级信息对应内容 -->
+                            <div role="tabpanel" class="tab-pane" id="info-class">
+                                <!-- 条件选择 -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <i class="icon-tags"></i> 条件选择
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="form-inline">
+                                            <div class="form-group">
+                                                <label>区域：</label>
+                                                <select class="form-control select-sty">
+                                                    <option value="1">汇川区</option>
+                                                    <option value="1">红花岗区</option>
+                                                </select>                                
+                                            </div>   
+                                            <div class="form-group">
+                                                <label>学校：</label>
+                                                <select class="form-control select-sty">
+                                                    <option value="1">遵义一小</option>
+                                                    <option value="1">遵义二小</option>
+                                                </select>                                
+                                            </div>   
+                                            <div class="form-group">
+                                                <label>年级：</label>
+                                                <select class="form-control select-sty">
+                                                    <option value="1">2013级</option>
+                                                    <option value="1">2014级</option>
+                                                </select>                                
+                                            </div>                                
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 筛选结果 -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <i class="icon-th-large"></i> 筛选结果
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <table class="table table-striped table-bordered table-hover" id="table-list-type04">
+                                            <tr>
+                                                <th>序号</th>
+                                                <th>名称</th>
+                                                <th>操作</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>一班</td>
+                                                <td>
+                                                    <button class="btn btn-primary btn-xs class-editor"><i class="icon-pencil"></i> 编辑</button>
+                                                    <button class="btn btn-danger btn-xs con-remove"><i class="icon-trash"></i> 删除</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>二班</td>
+                                                <td>
+                                                    <button class="btn btn-primary btn-xs class-editor"><i class="icon-pencil"></i> 编辑</button>
+                                                    <button class="btn btn-danger btn-xs con-remove"><i class="icon-trash"></i> 删除</button>
+                                                </td>
+                                            </tr>
+                                        </table>                            
+                                    </div>
+                                    <div class="panel-footer text-right">
+                                        <button class="btn btn-danger"><i class="icon-trash"></i> 删除选定项</button>
+                                        <button class="btn btn-success add-class"><i class="icon-plus"></i> 添加班级</button>
+                                    </div>
+                                </div>
+                                <!-- 导入 -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <i class="icon-file-alt"></i> 班级导入(execle格式)
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="form-inline">
+                                            <div class="form-group">
+                                                <label>选择文件：</label>
+                                                <input type="file" class="form-control">
+                                                <button class="btn btn-success"><i class="icon-eye-open"></i> 导入预览</button>
+                                                <a href="import-intro.html" class="btn btn-danger"><i class="icon-lightbulb"></i> 导入说明</a>
+                                            </div>                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 模态弹框：添加区域 -->
+    <div class="modal fade" id="addModal01" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <h4 class="modal-title">添加区域</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>区域名称：</label>
+                    <input type="text" class="form-control type-title">
+                    <span class="text-danger error-message"></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    <i class="icon-remove"></i> 取消
+                </button>
+                <button type="button" class="btn btn-success sure-add">
+                    <i class="icon-ok"></i> 确定
+                </button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- 模态弹框：添加学校 -->
+    <div class="modal fade" id="addModal02" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <h4 class="modal-title">添加学校</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>学校名称：</label>
+                    <input type="text" class="form-control school-title">
+                    <span class="text-danger error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label>学校类型：</label>
+                    <input type="text" class="form-control school-type">
+                    <span class="text-danger error-message"></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    <i class="icon-remove"></i> 取消
+                </button>
+                <button type="button" class="btn btn-success sure-add">
+                    <i class="icon-ok"></i> 确定
+                </button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- 模态弹框：添加年级 -->
+    <div class="modal fade" id="addModal03" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <h4 class="modal-title">添加年级</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>年级名称：</label>
+                    <input type="text" class="form-control type-title">
+                    <span class="text-danger error-message"></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    <i class="icon-remove"></i> 取消
+                </button>
+                <button type="button" class="btn btn-success sure-add">
+                    <i class="icon-ok"></i> 确定
+                </button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- 模态弹框：添加班级 -->
+    <div class="modal fade" id="addModal04" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <h4 class="modal-title">添加班级</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>班级名称：</label>
+                    <input type="text" class="form-control type-title">
+                    <span class="text-danger error-message"></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    <i class="icon-remove"></i> 取消
+                </button>
+                <button type="button" class="btn btn-success sure-add">
+                    <i class="icon-ok"></i> 确定
+                </button>
+            </div>
+        </div>
+      </div>
+    </div>
+        
+    <!-- 模态弹框：编辑区域 -->
+    <div class="modal fade" id="editorModal01" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <h4 class="modal-title">编辑内容分类</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>分类标题：</label>
+                    <input type="text" class="form-control type-title">
+                    <span class="text-danger error-message"></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    <i class="icon-remove"></i> 取消
+                </button>
+                <button type="button" class="btn btn-success sure-add">
+                    <i class="icon-ok"></i> 确定
+                </button>
+            </div>
+        </div>
+      </div>
+    </div>
+        
+    <!-- 模态弹框：编辑学校 -->
+    <div class="modal fade" id="editorModal02" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <h4 class="modal-title">编辑学校</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>学校标题：</label>
+                    <input type="text" class="form-control school-title">
+                    <span class="text-danger error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label>学校分类：</label>
+                    <input type="text" class="form-control school-type">
+                    <span class="text-danger error-message"></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    <i class="icon-remove"></i> 取消
+                </button>
+                <button type="button" class="btn btn-success sure-add">
+                    <i class="icon-ok"></i> 确定
+                </button>
+            </div>
+        </div>
+      </div>
+    </div>
+        
+    <!-- 模态弹框：编辑年级-->
+    <div class="modal fade" id="editorModal03" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <h4 class="modal-title">编辑内容分类</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>分类标题：</label>
+                    <input type="text" class="form-control type-title">
+                    <span class="text-danger error-message"></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    <i class="icon-remove"></i> 取消
+                </button>
+                <button type="button" class="btn btn-success sure-add">
+                    <i class="icon-ok"></i> 确定
+                </button>
+            </div>
+        </div>
+      </div>
+    </div>
+        
+    <!-- 模态弹框：编辑班级 -->
+    <div class="modal fade" id="editorModal04" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <h4 class="modal-title">编辑内容分类</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>分类标题：</label>
+                    <input type="text" class="form-control type-title">
+                    <span class="text-danger error-message"></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    <i class="icon-remove"></i> 取消
+                </button>
+                <button type="button" class="btn btn-success sure-add">
+                    <i class="icon-ok"></i> 确定
+                </button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 脚本 -->
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/editorInfoFn.js"></script>
+    <script src="../js/addInfo.js"></script>
+    <script>
+    $(function(){
+        // 添加康复类型
+        addInfo( '.add-org', '#addModal01', '#table-list-type01', '.type-title');
+        addInfo( '.add-school', '#addModal02', '#table-list-type02', '.school-title', '.school-type');
+        addInfo( '.add-grade', '#addModal03', '#table-list-type03', '.type-title');
+        addInfo( '.add-class', '#addModal04', '#table-list-type04', '.type-title');
+
+        // 编辑康复类型
+        editorInfoFn('.org-editor','#editorModal01','#table-list-type01','.type-title');
+        editorInfoFn('.school-editor','#editorModal02','#table-list-type02','.school-title','.school-type');
+        editorInfoFn('.grade-editor','#editorModal03','#table-list-type03','.type-title');
+        editorInfoFn('.class-editor','#editorModal04','#table-list-type04','.type-title');
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>遵义市特殊教育资源中心共公共服务平台后台</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="mainBox">
+        <!-- 路径导航 + 搜索框 -->
+        <div class="breadBox">
+            <!-- 路径导航 -->
+            <ol class="breadcrumb">
+              <li><i class="icon-home"></i> 信息资讯</li>
+              <li>资讯内容</li>
+              <li class="active">查看内容</li>
+            </ol>
+            <!-- 查询 -->
+            <div class="searchBox">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="请输入要查询的内容">
+                    <span class="input-group-btn">
+                        <button class="btn btn-danger"><i class="icon-search"></i></button>
+                    </span>
+                </div>
+            </div>            
+        </div>
+      <!-- 内容区域 -->
+        <div class="main">
+            <div class="container-fliud">
+                <div class="row">
+                    <!-- 结果列表 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <i class="icon-th-large"></i> 查看内容
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label">标题</label>
+                                    <div class="col-sm-11">
+                                        <input type="text" class="form-control input-sty" value="标题111" readonly="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label">缩略图</label>
+                                    <div class="col-sm-11">
+                                        <img src="../images/img-con.png" class="img-round img-thumbnail" alt="">
+                                        <input type="file" style="display: none">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label">类型</label>
+                                    <div class="col-sm-11">
+                                        <select class="form-control select-sty02" disabled="">
+                                            <option value="1">政策文件</option>
+                                            <option value="2">通知公告</option>
+                                            <option value="3">培训信息</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label">关键词</label>
+                                    <div class="col-sm-11">
+                                        <select class="form-control select-sty02" disabled="">
+                                            <option value="1">关键词1</option>
+                                            <option value="2">关键词2</option>
+                                            <option value="3">关键词3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label">内容</label>
+                                    <div class="col-sm-11">
+                                        <textarea class="form-control" readonly="">课程介绍课程介绍</textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="panel-footer text-right">
+                            <a href="news-con.html" class="btn btn-danger"><i class="icon-reply"></i> 返回</a>
+                            <a href="news-editor.html" class="btn btn-primary"><i class="icon-pencil"></i> 编辑信息</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 脚本 -->
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

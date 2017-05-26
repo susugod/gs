@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>遵义市特殊教育资源中心共公共服务平台后台</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="mainBox">
+        <!-- 路径导航 + 搜索框 -->
+        <div class="breadBox">
+            <!-- 路径导航 -->
+            <ol class="breadcrumb">
+              <li><i class="icon-home"></i> 系统管理</li>
+              <li class="active">角色管理</li>
+            </ol>         
+        </div>
+      <!-- 内容区域 -->
+        <div class="main">
+            <div class="container-fliud">
+                <div class="row">
+                    <!-- 角色列表 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <i class="icon-user"></i> 角色列表
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-striped table-bordered table-hover" id="role-table-item">
+                                <tr>
+                                    <th>序号</th>
+                                    <th>角色名称</th>
+                                    <th>操作</th>
+                                </tr>
+                                <tr>
+                                    <td>01</td>
+                                    <td>管理员</td>
+                                    <td>
+                                        <button class="btn btn-success btn-xs editorInfo"><i class="icon-pencil"></i> 编辑</button>
+                                        <a class="btn btn-danger btn-xs con-remove"><i class="icon-trash"></i> 删除</a>
+                                        <a href="power-editor.html" class="btn btn-primary btn-xs"><i class="icon-unlock"></i> 编辑权限</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>02</td>
+                                    <td>特教中心工作人员</td>
+                                    <td>
+                                        <button class="btn btn-success btn-xs editorInfo"><i class="icon-pencil"></i> 编辑</button>
+                                        <a class="btn btn-danger btn-xs con-remove"><i class="icon-trash"></i> 删除</a>
+                                        <a href="power-editor.html" class="btn btn-primary btn-xs"><i class="icon-unlock"></i> 编辑权限</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>03</td>
+                                    <td>超级管理员</td>
+                                    <td>
+                                        <button class="btn btn-success btn-xs editorInfo"><i class="icon-pencil"></i> 编辑</button>
+                                        <a class="btn btn-danger btn-xs con-remove"><i class="icon-trash"></i> 删除</a>
+                                        <a href="power-editor.html" class="btn btn-primary btn-xs"><i class="icon-unlock"></i> 编辑权限</a>
+                                    </td>
+                                </tr>
+                            </table>                            
+                        </div>
+                        <div class="panel-footer">
+                            <div class="input-group">
+                                <input type="text" class="form-control">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-success"><i class="icon-plus"></i> 添加角色</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 模态弹框：编辑 -->
+    <div class="modal fade" id="rolesModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <h4 class="modal-title">编辑角色名称</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>角色名称：</label>
+                    <input type="text" class="form-control roles-name">
+                    <span class="text-danger error-message"></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    <i class="icon-remove"></i> 取消
+                </button>
+                <button type="button" class="btn btn-success sure-add">
+                    <i class="icon-ok"></i> 确定
+                </button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- 脚本 -->
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/editorInfoFn.js"></script>
+    <script>
+    $(function(){
+        // 调用角色编辑方法
+        editorInfoFn('.editorInfo','#rolesModal','#role-table-item','.roles-name')
+    })
+    </script>
+</body>
+</html>

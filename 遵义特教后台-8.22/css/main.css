@@ -1,0 +1,275 @@
+body{
+    font-family: 'Microsoft Yahei';    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+button:focus,a:focus{
+    outline: none !important;
+}
+a{
+    color: #333;
+}
+/*内容展示容器*/
+.mainBox{
+    width: 100%;
+}
+/*路径导航+搜索框*/
+.breadBox{
+    position: relative;
+}
+/*路径导航*/
+.breadBox .breadcrumb{
+    border-bottom: solid 1px #ddd;
+    padding: 12px 20px;
+    border-radius: 0;
+}
+.breadBox .breadcrumb a{
+    color: #333;
+}
+/*搜索框*/
+.breadBox .searchBox{
+    position: absolute;
+    right: 16px;
+    top: 5px;
+    width: 20%;
+}
+.breadBox .searchBox .form-control{
+    border-radius: 20px 0 0 20px;
+}
+.breadBox .searchBox .btn{
+    border-radius: 0px 20px 20px 0px;
+}
+
+/*内容展示*/
+.main{
+    padding: 10px 40px;
+    width: 100%;
+}
+
+/*关键词*/
+.keywords .label{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 5px 10px;
+    margin: 5px;
+}
+.keywords .label-default{
+    background-color: #eee;
+    color: #444;
+}
+.keywords .label-default:hover{
+    color: #e68888;
+}
+.keywords h4{
+    margin-top: 0;
+}
+.second-keywords{
+    border-radius: 6px;
+    padding: 6px;
+    margin-top: 4px;
+    margin-left: 6px;
+}
+.label-danger{
+    position: relative;
+}
+.caret{
+    display: none;
+}
+.label-danger>.caret{
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    margin-left: -4px;
+    color: #e68888;
+}
+
+/*在线课程->内容类别*/
+.classify{
+    margin: 10px;
+}
+.classify dt{
+    line-height: 22px;
+    margin-bottom: 10px;
+    min-width: 80px;
+}
+.classify dt,.classify dd{
+    float: left;
+    margin-right: 20px;
+}
+.classify dd{
+    margin-bottom: 7px;
+}
+.classify dd a{
+    font-size: 13px;
+    border-radius: 3px;
+    display: block;
+    padding: 2px 5px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+.classify dd a:hover{
+    color: #e68888;
+}
+.classify dd a.active{
+    background-color: #e68888;
+    color: #fff;
+}
+/*标题*/
+.con-title{
+    font-size: 16px;
+}
+
+/*时间选择框中间区域*/
+.time-split{
+    margin: 0 10px;
+}
+/*信息管理->设置统一密码*/
+.input-password{
+    width: 200px;
+    display: inline-block;
+    margin-left: 20px;
+}
+/*编辑角色权限*/
+.role-power h4{
+    margin-bottom: 20px;
+    margin-top: -5px;
+}
+.role-power .second-title{
+    margin-top: 20px;
+    background-color: #eee;
+    padding: 4px 0px 2px 6px;
+}
+.role-power .second-title label{
+    font-weight: bold;
+    font-size: 16px;
+}
+.role-power .third-title{
+    padding-left: 30px;
+}
+
+.funBox{
+    margin-bottom: 30px;
+}
+
+/*弹框*/
+.modal-backdrop.in{
+    opacity: 0;
+}
+.modal{
+    top: 44px;
+}
+
+/*标签页样式*/
+.tab-content{
+    border:solid 1px #ddd;
+    border-top: none;
+    padding: 20px;
+    border-radius: 0 0 4px 4px;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+    color: #e68888;
+}
+/*分页*/
+.pagination{
+    margin: 5px 0 5px;
+}
+.pagination > li > a{
+    padding: 7px 16px;
+    color: #333;
+    transition: all 0.5s;
+}
+.pagination > li > a:hover{
+    background-color: #fff;
+}
+/*缩略图*/
+.img-thumbnail{
+    height: 160px;
+}
+.img-thumbnail02{
+    width: 200px;
+}
+
+/*图片上传模块*/
+#uploadModal{margin-top: 0;}
+#preview1 { width: auto; height: auto; float: left; margin-right: 20px; overflow: hidden; position: relative;}
+#preview1 img{ max-width: 600px; max-height: 400px;}
+.preview2-wrap{ float: left; position: relative; }
+#preview2 { width: 200px; height: 150px; overflow: hidden; }
+#preview2 img { width: 200px; height: 150px; }
+.previewTitle{ position: absolute; left: 0; top: 160px; z-index: 9999; }
+
+/*通用模块*/
+.mt-10{
+    margin-top: 10px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mr-10{
+    margin-right: 10px;
+}
+.mr-20{
+    margin-right: 20px;
+}
+.select-sty{
+    width: 180px;
+    min-width: 180px;
+    margin-right: 10px;
+}
+.select-sty02{
+    width: 220px;
+}
+.input-sty{
+    width: 220px;
+}
+.panel-heading{
+    padding: 8px 15px;
+}
+.panel-footer{
+    padding: 8px 15px;
+}
+.panel-title .btn{
+    margin-top: -6px;
+    margin-bottom: -5px;
+}
+.label-default{
+    background-color: #f8f8f8 !important;
+}
+input[type='file'].form-control{
+    padding-top: 5px; padding-bottom: 0px;
+}
+@-moz-document url-prefix(){
+    input[type='file'].form-control{
+    padding-top: 0px;
+    }
+}
+/*日期控件*/
+.glyphicon-calendar:before{
+    content:"\f073";
+}
+.input-group[class*="col-"]{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.form_width{
+    width: 250px;
+}
+/*导入说明*/
+.import-intro{
+    padding-left: 30px;
+}
+.import-intro p{
+    margin: 12px 0;
+}
+.import-intro p.import-warning{
+    font-weight: bold;
+    color: #ff0000;
+    margin: 16px 0;
+}
+.import-intro p.import-prompt{
+    font-weight: bold;
+    color: #e68888;
+    margin: 16px 0;
+}

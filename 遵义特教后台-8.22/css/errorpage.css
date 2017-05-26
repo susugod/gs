@@ -1,0 +1,51 @@
+body,html{ 
+    height: 100%; 
+    overflow: hidden; 
+    font-family: 'Microsoft Yahei'; 
+    color: #333; 
+}
+.errorBox{ 
+    text-align: center; 
+    width: 600px; 
+    height: 400px; 
+    margin: 120px auto; 
+    background: url('../images/404-red.png') center 40% no-repeat; 
+    /*background: url('../images/404-orange.png') center 40% no-repeat; */
+    /*background: url('../images/404-green.png') center 40% no-repeat; */
+    overflow: hidden; 
+    animation: showMsg 1s ease-in forwards;
+}
+.errorMsg {
+    margin-top: 42%; 
+}
+.errorMsg h3 { 
+    font-size: 24px; 
+    font-weight: normal;
+}
+.errorMsg p { 
+    font-size: 16px; 
+    color: #666; 
+    margin: -10px auto 20px; 
+}
+.errorMsg a { 
+    text-decoration: none; 
+    display: inline-block; 
+    padding: 6px 10px; 
+    /*background-color: #00a2ca;  /*蓝色*/
+    /*background-color: #e68888;  /*红色*/
+    background-color: #65b76f; /*绿色*/
+    color: #fff; font-size: 14px; 
+}
+@keyframes showMsg{
+    0%{ transform: translateY(-500px) scale(0.5) rotateX(90deg) rotateY(-60deg); opacity: 0 }
+    100%{ transform: translateY(0px) rotateX(0deg) scale(1); opacity: 1 }
+}
+.footerBox{
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    height: 30px; 
+    line-height: 30px;
+}

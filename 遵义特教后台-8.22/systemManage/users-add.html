@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>遵义市特殊教育资源中心共公共服务平台后台</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="mainBox">
+        <!-- 路径导航 + 搜索框 -->
+        <div class="breadBox">
+            <!-- 路径导航 -->
+            <ol class="breadcrumb">
+              <li><i class="icon-home"></i> 系统管理</li>
+              <li>用户管理</li>
+              <li class="active">用户添加</li>
+            </ol>         
+        </div>
+      <!-- 内容区域 -->
+        <div class="main">
+            <div class="container-fliud">
+                <div class="row">
+                    <!-- 用户添加 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <i class="icon-user"></i> 用户添加
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">                               
+                                <div class="form-group col-md-3">
+                                  <label>用户名</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label>姓名</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label>性别</label><br/>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="sexgroup" checked="">男 
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="sexgroup">女 
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">                               
+                                <div class="form-group col-md-3">
+                                  <label>密码</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label>确认密码</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label>角色</label>
+                                  <select class="form-control">
+                                    <option value="1">管理员</option>
+                                    <option value="2">特教人员</option>
+                                    <option value="3" selected="">超级管理员</option>
+                                  </select>
+                                </div>
+                                <div class="form-group col-md-3">
+                                </div>
+                            </div>
+                            <div class="row">    
+                                <div class="form-group col-md-3">
+                                  <label>出生年月</label>
+                                  <input type="text" class="form-control">
+                                </div>                           
+                                <div class="form-group col-md-3">
+                                  <label>单位</label>
+                                  <select class="form-control">
+                                    <option value="1">遵义特教中心1</option>
+                                    <option value="2">遵义特教中心2</option>
+                                    <option value="3" selected="">遵义特教中心3</option>
+                                  </select>
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label>联系方式</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group col-md-3">
+                                </div>
+                                <div class="form-group col-md-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 学校授权 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <i class="icon-th-large"></i> 学校授权
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="form-group col-md-3">
+                              <label>区域</label>
+                              <select class="form-control">
+                                <option value="1">汇川区</option>
+                                <option value="2">红花岗区</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-md-3">
+                              <label>学校名称</label>
+                              <select class="form-control">
+                                <option value="1" selected="">遵义市第一中学</option>
+                                <option value="2">遵义市第二中学</option>
+                                <option value="3">遵义市第三中学</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="form-group col-md-12">
+                              <button class="btn btn-primary"><i class="icon-plus-sign"></i> 添加授权</button>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="form-group col-md-12">
+                              <label>授权清单</label>
+                              <select class="form-control" multiple>
+                                <option value="1">遵义一小2016级</option>
+                                <option value="1">遵义一小2015级</option>
+                              </select>
+                            </div>                  
+                          </div>
+                          <div class="row">
+                            <div class="form-group col-md-12">
+                                <button class="btn btn-danger"><i class="icon-trash"></i> 清空</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- 操作 -->
+                    <div class="funBox text-right">
+                        <a class="btn btn-danger" href="users.html"><i class="icon-reply"></i> 返回</a>
+                        <a class="btn btn-success" href="#"><i class="icon-ok"></i> 确定添加</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 脚本 -->
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

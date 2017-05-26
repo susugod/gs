@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>遵义市特殊教育资源中心共公共服务平台后台</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="mainBox">
+        <!-- 路径导航 + 搜索框 -->
+        <div class="breadBox">
+            <!-- 路径导航 -->
+            <ol class="breadcrumb">
+              <li><i class="icon-home"></i> 送教上门</li>
+              <li>送教内容</li>
+              <li>具体内容</li>
+              <li class="active">编辑内容</li>
+            </ol>
+            <!-- 查询 -->
+            <div class="searchBox">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="请输入要查询的内容">
+                    <span class="input-group-btn">
+                        <button class="btn btn-danger"><i class="icon-search"></i></button>
+                    </span>
+                </div>
+            </div>            
+        </div>
+      <!-- 内容区域 -->
+        <div class="main">
+            <div class="container-fliud">
+                <div class="row">
+                    <!-- 结果列表 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <i class="icon-th-large"></i> 编辑内容
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label">标题</label>
+                                    <div class="col-sm-11">
+                                        <input type="text" class="form-control input-sty" value="低视力恢复">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label">缩略图</label>
+                                    <div class="col-sm-11">
+                                        <img src="../images/img-con.png" class="img-round img-thumbnail" alt="">
+                                        <input type="file">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label">内容分类</label>
+                                    <div class="col-sm-11">
+                                        <select class="form-control select-sty02">
+                                            <option value="1">学习资源</option>
+                                            <option value="2">特教资源</option>
+                                            <option value="3">课件资源</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label">关键词</label>
+                                    <div class="col-sm-11">
+                                        <select class="form-control select-sty02">
+                                            <option value="1">关键词1</option>
+                                            <option value="2">关键词2</option>
+                                            <option value="3">关键词3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label">资源类型</label>
+                                    <div class="col-sm-11">
+                                        <select class="form-control select-sty02">
+                                            <option value="1">doc</option>
+                                            <option value="2">pdf</option>
+                                            <option value="3">jpg</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label">描述</label>
+                                    <div class="col-sm-11">
+                                        <input type="text" class="form-control input-sty" value="这里是描述文字">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-1 control-label">资源上传</label>
+                                    <div class="col-sm-11">
+                                        <input type="file">
+                                        <p class="text-muted">格式：doc，pdf，xls，ppt，mp3，rar，zip</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="panel-footer text-right">
+                            <a href="con-detail.html" class="btn btn-danger"><i class="icon-remove"></i> 取消</a>
+                            <a href="con-editor.html" class="btn btn-success"><i class="icon-save"></i> 保存信息</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 脚本 -->
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

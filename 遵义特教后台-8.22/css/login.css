@@ -1,0 +1,89 @@
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    background: #f6f6f6 url('../images/login-bg.png') center center no-repeat;
+    font-family: 'Microsoft Yahei';    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+a:focus{
+    outline: none;
+}
+/*登录容器*/
+.login-wrap{
+    height: 420px;
+}
+/*遵义中心标题*/
+.login-title{
+    font-size: 28px;
+    margin: 5px 0;
+    text-align: center;
+    letter-spacing:0.1em;
+}
+/*登录框*/
+.login-box{
+    height: 416px;
+    border-color: #449b4f;
+}
+/*登录框头部标题*/
+.login-box .panel-title{
+    font-size: 18px;
+}
+/*登录框内容*/
+.login-box .panel-body{
+    padding: 10px 30px 20px ;
+}
+.login-box .panel-body .form-group{
+    margin: 26px 0;
+}
+.login-box .panel-body .form-group .input-group-addon{
+    background-color: #e68888;
+    color: #fff;
+    border:none;
+}
+.login-box .panel-body .form-group input.form-control{
+    border-left: none;
+    font-size: 16px;
+}
+.login-box .panel-body .form-group input:focus{
+    border-color: #e68888;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(180, 62, 62, 0.2);
+}
+.input-group-lg > .form-control, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn{
+    height: 40px;
+    line-height: 1.2em;
+    padding: 6px 16px;
+}
+/*登录按钮*/
+.split-line{
+    margin-top: 40px;
+}
+.form-group .btn-block{
+    padding: 8px;
+}
+
+/*错误提示信息*/
+.login-box .error-msg{
+    color: #e07777;
+    position: relative;
+    top: -120px;
+    text-align: center;
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .login-title{
+        font-size: 24px;
+    }
+    .login-box .panel-body{
+        padding: 10px 20px 20px ;
+    }
+}
+@media (max-width: 992px){
+    .login-title{
+        font-size: 22px;
+        position: relative;
+        top: -12px;
+    }
+}

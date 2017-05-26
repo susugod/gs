@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>遵义市特殊教育资源中心共公共服务平台后台</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="mainBox">
+        <!-- 路径导航 + 搜索框 -->
+        <div class="breadBox">
+            <!-- 路径导航 -->
+            <ol class="breadcrumb">
+              <li><i class="icon-home"></i> 系统管理</li>
+              <li class="active">模块名称</li>
+            </ol>         
+        </div>
+      <!-- 内容区域 -->
+        <div class="main">
+            <div class="container-fliud">
+                <div class="row">
+                    <!-- 链接标题 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <i class="icon-th-large"></i> 链接标题
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-striped table-bordered table-hover" id="table-list-01">
+                                <tr>
+                                    <th>链接标题</th>
+                                    <th>显示顺序（1-7，1为最左，7为最右）</th>
+                                    <th>功能选择</th>
+                                </tr>
+                                <tr>
+                                    <td>教育系统</td>
+                                    <td>1</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-xs moduel-editor01"><i class="icon-pencil"></i> 编辑</button>
+                                        <button class="btn btn-danger btn-xs con-remove"><i class="icon-remove"></i> 删除</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>残联系统</td>
+                                    <td>2</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-xs moduel-editor01"><i class="icon-pencil"></i> 编辑</button>
+                                        <button class="btn btn-danger btn-xs con-remove"><i class="icon-remove"></i> 删除</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>学校网站</td>
+                                    <td>3</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-xs moduel-editor01"><i class="icon-pencil"></i> 编辑</button>
+                                        <button class="btn btn-danger btn-xs con-remove"><i class="icon-remove"></i> 删除</button>
+                                    </td>
+                                </tr>
+                            </table>                            
+                        </div>
+                        <div class="panel-footer text-right">
+                            <button class="btn btn-success" id="btn-add01"><i class="icon-plus"></i> 添加</button>
+                        </div>
+                    </div>
+                    <!-- 链接内容 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <i class="icon-th-large"></i> 链接内容
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <!-- 筛选 -->
+                            <div class="form-inline">
+                                <div class="form-group">
+                                    <label>选择链接标题：</label>
+                                    <select class="form-control select-sty">
+                                        <option value="1">教育系统</option>
+                                        <option value="2">残联系统</option>
+                                        <option value="3">学校网站</option>
+                                    </select>
+                                </div>                                
+                            </div>
+                            <!-- 筛选结果 -->
+                            <table class="table table-striped table-bordered table-hover mt-20"  id="table-list-02">
+                                <tr>
+                                    <th>链接标题</th>
+                                    <th>显示顺序</th>
+                                    <th>链接地址</th>
+                                    <th>功能选择</th>
+                                </tr>
+                                <tr>
+                                    <td>中国教育部</td>
+                                    <td>1</td>
+                                    <td>http://www.moe.gov.cn/</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-xs moduel-editor02"><i class="icon-pencil"></i> 编辑</button>
+                                        <button class="btn btn-danger btn-xs con-remove"><i class="icon-remove"></i> 删除</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>贵州省教育局</td>
+                                    <td>2</td>
+                                    <td>http://www.gzsedu.cn/</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-xs moduel-editor02"><i class="icon-pencil"></i> 编辑</button>
+                                        <button class="btn btn-danger btn-xs con-remove"><i class="icon-remove"></i> 删除</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>遵义市教育局</td>
+                                    <td>3</td>
+                                    <td>http://www.zyiedu.cn/</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-xs moduel-editor02"><i class="icon-pencil"></i> 编辑</button>
+                                        <button class="btn btn-danger btn-xs con-remove"><i class="icon-remove"></i> 删除</button>
+                                    </td>
+                                </tr>
+                            </table>                            
+                        </div>
+                        <div class="panel-footer text-right">
+                            <button class="btn btn-success" id="btn-add02"><i class="icon-plus"></i> 添加</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 模态弹框：添加模块1 -->
+    <div class="modal fade" id="modal-module01" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <h4 class="modal-title">添加链接标题</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>链接标题：</label>
+                    <input type="text" class="form-control modal-text01">
+                </div>
+                <div class="form-group">
+                    <label>显示顺序：</label>
+                    <input type="text" class="form-control modal-text02">
+                </div>
+                <span class="text-danger error-message"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    <i class="icon-remove"></i> 取消
+                </button>
+                <button type="button" class="btn btn-success sure-add">
+                    <i class="icon-ok"></i> 确定
+                </button>
+            </div>
+        </div>
+      </div>
+    </div>    
+    <!-- 模态弹框：编辑模块1 -->
+    <div class="modal fade" id="modal-module-editor01" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <h4 class="modal-title">添加链接标题</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>链接标题：</label>
+                    <input type="text" class="form-control modal-text01">
+                </div>
+                <div class="form-group">
+                    <label>显示顺序：</label>
+                    <input type="text" class="form-control modal-text02">
+                </div>
+                <span class="text-danger error-message"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    <i class="icon-remove"></i> 取消
+                </button>
+                <button type="button" class="btn btn-success sure-add">
+                    <i class="icon-ok"></i> 确定
+                </button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 脚本 -->
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/addInfo.js"></script>
+    <script src="../js/editorInfoFn.js"></script>
+    <script>
+    $(function(){
+        // 添加
+        addInfo( '#btn-add01', '#modal-module01', '#table-list-01', '.modal-text01', '.modal-text02');
+        editorInfoFn('.moduel-editor01','#modal-module-editor01','#table-list-01','.modal-text01','.modal-text02')
+    })
+    </script>
+</body>
+</html>
